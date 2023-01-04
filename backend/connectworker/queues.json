@@ -1,0 +1,6 @@
+{
+    "vec_worker.*" :{"queue": "vec"},
+    "query_worker.*":{"queue": "query"},
+    "extraction_worker.*":{"queue": "extraction"}
+
+}

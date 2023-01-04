@@ -1,0 +1,16 @@
+{
+    "recommendations": [
+        "ms-python.pylint",
+        "ms-python.python",
+        "angular.ng-template",
+        "johnpapa.angular2",
+        "mikestead.dotenv",
+        "editorconfig.editorconfig",
+        "dbaeumer.vscode-eslint",
+        "eamodio.gitlens",
+        "ecmel.vscode-html-css",
+        "oderwat.indent-rainbow",
+        "stylelint.vscode-stylelint",
+        "redhat.vscode-yaml"
+    ]
+}

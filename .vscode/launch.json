@@ -1,0 +1,130 @@
+{
+
+    // Use IntelliSense to learn about possible attributes.
+
+    // Hover to view descriptions of existing attributes.
+
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+
+    "version": "0.1.0",
+
+    "configurations": [
+
+        {
+
+            "name": "Python: Current File",
+
+            "type": "python",
+
+            "request": "launch",
+
+            "console": "integratedTerminal",
+
+            "justMyCode": true
+
+        },
+
+        {
+
+            "name": "Python: detectlangworker",
+
+            "type": "python",
+
+            "request": "launch",
+
+            "program": "${workspaceFolder}/backend/detectlangworker/main_langdetect.py",
+
+            "console": "integratedTerminal",
+
+        },
+
+
+        {
+
+            "name": "Python: Query Worker",
+
+            "type": "python",
+
+            "request": "launch",
+
+            "program": "${workspaceFolder}/backend/connectworker/main_connect.py",
+
+            "console": "integratedTerminal",
+
+            "justMyCode": true
+
+        },
+
+
+        {
+
+            "name": "Python: Extraction Worker",
+
+            "type": "python",
+
+            "request": "launch",
+
+            "program": "${workspaceFolder}/backend/extraction_worker/main_extraction.py",
+
+            "cwd": "${workspaceFolder}/backend/extraction_worker",
+
+            "console": "integratedTerminal",
+
+            "env": {
+
+                "PYTHONPATH": "${workspaceFolder}/backend/extraction_worker"
+
+            },
+
+        },
+
+        {
+
+            "name": "Python: FastAPI",
+
+            "type": "python",
+
+            "request": "launch",
+
+            "module": "uvicorn",
+
+            "cwd": "${workspaceFolder}/backend/fastapi",
+
+            "args": [
+
+                "app.server:app",
+
+                "--reload"
+
+            ],
+
+            "jinja": true
+
+        }
+
+    ],
+
+    "compounds": [
+
+        {
+
+            "name": "Compound",
+
+            "configurations": [
+
+                "Python: Extraction Worker",
+
+                "Python: FastAPI",
+
+                "Python: Connection Worker",
+
+
+                "Python: Langdetect Worker"
+
+            ]
+
+        }
+
+    ]
+
+}

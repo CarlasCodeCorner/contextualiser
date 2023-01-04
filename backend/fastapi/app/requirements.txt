@@ -1,0 +1,15 @@
+pika==1.2.1
+pydantic==1.9.1
+typing
+python-multipart
+fastapi[all]==0.70.1
+uvicorn[standard]==0.15.0
+gunicorn==20.1.0
+elasticsearch==8.2.0
+pymongo==4.1.1
+transformers==4.19.2  
+ecdsa==0.18.0
+python-jose==3.3.0
+passlib==1.7.4
+bcrypt==4.0.1
+python-jose
